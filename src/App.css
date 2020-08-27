@@ -1,10 +1,57 @@
 .App {
-  text-align: center;
+  width : 500px;
+  margin-top: 200px;
+  margin-left :auto;
+  margin-right: auto;
+  border : 1px solid #bec1c7;
+  
 }
-
+.App .Header {
+  display: flex;
+  padding : 15px 6px;
+  border-bottom: 1px solid #eeeeee;
+}
+.App .Header input {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding-left: 20px;
+  border : none;
+  width : 100%
+}
+.App .Header input:focus{
+  outline : none;
+}
+.App .Head {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 44px;
+  text-align: center;
+  padding-top :5px;
+  padding-bottom: 10px;
+  color: #dfa6a6;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.App .actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App .actions .action {
+  margin: 0 6px;
+  padding : 6px 10px;
+  border-radius: 5px;
+  border : 1px solid transparent;
+  color : black;
+  cursor: pointer;
+}
+.App .actions .action:hover {
+  border-color: black;
+}
+.App .actions .active {
+  border-color: black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
